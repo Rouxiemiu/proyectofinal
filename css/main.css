@@ -2016,6 +2016,10 @@ pre code {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(255, 127, 0, 0.25);
 }
+.form-control::-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
 .form-control::placeholder {
   color: #6c757d;
   opacity: 1;
@@ -2401,6 +2405,7 @@ textarea.form-control {
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
+      -ms-user-select: none;
           user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
@@ -3600,6 +3605,7 @@ input[type=button].btn-block {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   -webkit-appearance: none;
+     -moz-appearance: none;
           appearance: none;
 }
 .custom-select:focus {
@@ -3712,6 +3718,7 @@ input[type=button].btn-block {
   padding: 0;
   background-color: transparent;
   -webkit-appearance: none;
+     -moz-appearance: none;
           appearance: none;
 }
 .custom-range:focus {
@@ -3767,7 +3774,8 @@ input[type=button].btn-block {
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
@@ -5275,6 +5283,7 @@ button.close {
   background-color: transparent;
   border: 0;
   -webkit-appearance: none;
+     -moz-appearance: none;
           appearance: none;
 }
 
@@ -9891,8 +9900,8 @@ h3 {
   }
 }
 body {
-  font-family: "Montserrat", sans-serif;
-  color: #495057;
+  font-family: "Poppins", sans-serif;
+  color: #495957;
 }
 
 h1, h2, h3, h4, h5, h6 {
